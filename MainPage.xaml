@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImaginarIA.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="1"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="ImaginarIA"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Prueba con: 'un oso panda volando un avion en estilo anime'"
+                SemanticProperties.HeadingLevel="Level5"
+                SemanticProperties.Description="Imagina y genera cualquier cosa, al instante"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Image x:Name="mainImage"
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Search image"
+                HeightRequest="500"
+                HorizontalOptions="Center"/>
+
+            <SearchBar
+                x:Name="SearchBar"
+                Text="majestic lightning divine orb art"
+                SemanticProperties.Hint="Generates the image you described"
+                HorizontalOptions="Center"/>
+            <Button
+                x:Name="CounterBtn"
+                Text="Generate"
+                SemanticProperties.Hint="Generates the image you described"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+            
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
